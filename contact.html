@@ -6,122 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>MASTA's Place | Home</title>
-
+    <meta name="description"
+    content="Contact MASTA's Place for accommodation information, enquiries and booking assistance.">
+    <meta name="keywords"
+    content="MASTA's Place rooms, accommodation, Deluxe Room, Standard Room, Family Room, South Africa">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MASTA's Place | Contact</title>
+        <title>MASTA's Place | Contact</title>
+        <meta name="description"
+        content="Contact MASTA's Place for accommodation information, enquiries and booking assistance.">
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+        <link rel="stylesheet" href="css/style.css">
 
-<body>
-
-    <header>
-
-        <img src="images/logo.png" alt="MASTA's Place Logo" class="logo">
-
-        <h1>MASTA's Place</h1>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="rooms.html">Our Rooms</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
-    </header>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    </head>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
 
 
-    <main>
+    <body>
 
-        <section>
+        <header>
 
-            <h2>Book Your Stay</h2>
+            <img src="images/logo.png" alt="MASTA's Place Logo" class="logo">
 
-            <p>
-                Complete the form below to request a booking.
-            </p>
+            <h1>MASTA's Place</h1>
 
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="rooms.html">Our Rooms</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="enquiry.html">Enquiry</a>
+            </nav>
 
-            <form>
-
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name">
-
-
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email">
-
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
+        </header>
 
 
-                <label for="room">Select Room:</label>
+        <main>
 
-                <select id="room" name="room">
+            <section>
 
-                    <option>Deluxe Room</option>
-                    <option>Standard Room</option>
-                    <option>Family Room</option>
+                <h2>Book Your Stay</h2>
 
-                </select>
-
-
-                <label for="checkin">Check-in Date:</label>
-                <input type="date" id="checkin" name="checkin">
+                <p>
+                    Complete the form below to request a booking.
+                </p>
 
 
-                <label for="checkout">Check-out Date:</label>
-                <input type="date" id="checkout" name="checkout">
+                <form>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name">
 
 
-                <label for="guests">Number of Guests:</label>
-                <input type="number" id="guests" name="guests">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
 
 
-                <label for="message">Special Request:</label>
-
-                <textarea id="message" name="message"></textarea>
-
-
-                <button type="submit">Submit Booking</button>
-
-            </form>
-
-        </section>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
 
 
-        <section>
-              <h2>Contact Us</h2>
+                    <label for="room">Select Room:</label>
 
-              <p><strong>Phone:</strong> +27 00 123 4567</p>
+                    <select id="room" name="room">
 
-              <p><strong>Email:</strong> info@mastaplace.com</p>
+                        <option>Deluxe Room</option>
+                        <option>Standard Room</option>
+                        <option>Family Room</option>
 
-              <p><strong>Address:</strong> 123 Main Street, Johannesburg, Gauteng, South Africa</p>
-       </section>
-
-    </main>
+                    </select>
 
 
-    <footer>
+                    <label for="checkin">Check-in Date:</label>
+                    <input type="date" id="checkin" name="checkin">
 
-        <p>&copy; 2026 MASTA's Place. All Rights Reserved.</p>
 
-    </footer>
+                    <label for="checkout">Check-out Date:</label>
+                    <input type="date" id="checkout" name="checkout">
 
-</body>
 
-</html>
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests">
+
+
+                    <label for="message">Special Request:</label>
+
+                    <textarea id="message" name="message"></textarea>
+
+
+                    <button type="submit">Submit Booking</button>
+
+                </form>
+
+            </section>
+            <section>
+
+                <h2>Find Us</h2>
+
+                <div id="map" style="height: 450px;"></div>
+
+            </section>
+
+            <section>
+                <h2>Contact Us</h2>
+
+                <p><strong>Phone:</strong> +27 00 123 4567</p>
+
+                <p><strong>Email:</strong> info@mastaplace.com</p>
+
+                <p><strong>Address:</strong> 123 Main Street, Johannesburg, Gauteng, South Africa</p>
+            </section>
+
+        </main>
+
+
+        <footer>
+
+            <p>&copy; 2026 MASTA's Place. All Rights Reserved.</p>
+
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+
+    </html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://YOUR-GITHUB-USERNAME.github.io/MASTAs-Place/sitemap.xml
+

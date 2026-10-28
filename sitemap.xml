@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://YOUR-GITHUB-USERNAME.github.io/MASTAs-Place/</loc>
+    </url>
+
+    <url>
+        <loc>https://YOUR-GITHUB-USERNAME.github.io/MASTAs-Place/about.html</loc>
+    </url>
+
+    <url>
+        <loc>https://YOUR-GITHUB-USERNAME.github.io/MASTAs-Place/rooms.html</loc>
+    </url>
+
+    <url>
+        <loc>https://YOUR-GITHUB-USERNAME.github.io/MASTAs-Place/gallery.html</loc>
+    </url>
+
+    <url>
+        <loc>https://YOUR-GITHUB-USERNAME.github.io/MASTAs-Place/enquiry.html</loc>
+    </url>
+
+    <url>
+        <loc>https://YOUR-GITHUB-USERNAME.github.io/MASTAs-Place/contact.html</loc>
+    </url>
+
+</urlset>
